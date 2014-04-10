@@ -1,4 +1,4 @@
-# Apple can go f*ck themselves
+# Apple seriously, comon
 ._*
 .DS_Store
 .DS_Store?
@@ -18,7 +18,7 @@ Thumbs.db
 .sass-cache/
 
 # Bundler
-vendor/ruby
+.gems/
 
 # Bower
 bower_components/

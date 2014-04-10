@@ -1,18 +1,11 @@
-# Internet Hacks
-This is a collection of fun little scripts and styles I use to customize my personal internet experience.
+I love the concept of personalizing your web experience - here is where I've made a tiny start.
 
-# Software
-### Fluid
-I use [Fluid](http://fluidapp.com/) extremely heavily, on a day-to-day basis. It allows one to apply user scripts and styles to the browser engine, allowing customization of any website contained in the app.
+# Fluid
+So I'm of the opinion that [Fluid](http://fluidapp.com/) is the best thing since prettymuch ever. Not only can it take your favorite website and put it into a mac-flavored box. Additionally, you get to tack on your own CSS and JavaScript; imagine the possibilities!
 
-### Dotcss
-[dotcss](https://github.com/stewart/dotcss) is a unique little piece of software that sits a tiny server in your Chrome environment, and loads arbitrary user scripts/styles upon matching a web URL, similar to the functionality of Fluid except integrated directly with Chrome so that literally any website is a viable candidate for customization.
+### Hydronamic
+I've started a micro library for editing Fluid app styles and scripts. Maybe it will become a gem someday.
 
-# Development Tools
-- #### Compass
-- #### CoffeeScript
-
----
-# Hacks
-### Gmail
-todo: example
+## Development Tools
+-  Compass/SASS
+-  CoffeeScript
