@@ -19,6 +19,9 @@ Thumbs.db
 
 # Bundler
 .gems/
+.vendor/
+.bundle/
 
 # Bower
 bower_components/
+components/
