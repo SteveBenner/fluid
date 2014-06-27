@@ -3,9 +3,11 @@
 source 'http://localhost:9292'
 source 'https://rubygems.org'
 
-gem 'plist'
-# gem 'hashugar', github: 'SteveBenner/hashugar'
-gem 'hashugar'
+gem 'hashugar' # my own tool
+
+group :hydrodynamic do
+	gem 'plist'
+end
 
 group :development do
 	gem 'compass'
