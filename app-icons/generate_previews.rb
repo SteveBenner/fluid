@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
-#
-# Generate a markdown README with icon previews
+
+# This script generates a markdown README containing previews of all the icons
+# in this folder, sorted by dimension, as well as a legal notice.
+
 # NOTE: all image file names must end with a hyphen, followed by a size in pixels
-#
 
 images = Dir.glob("*.{png,jpg}").reduce({}) do |list, img|
 	# divide files into arrays - one for each unique img size
@@ -19,6 +20,7 @@ end
 # create README file
 File.open 'README.md', 'w' do |f|
 	f.puts '# App Icons'
+  f.puts ''
 	f.puts File.read 'LEGAL.md' # insert legal disclaimer
 	f.puts ''
 	f.puts '---'
