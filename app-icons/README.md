@@ -22,6 +22,7 @@
 
 ## 300 px
 ![Codepen](codepen-300.png)
+![Toggl](toggl-300.png)
 
 ## 256 px
 ![Google Contacts](google-contacts-256.png)
@@ -37,6 +38,7 @@
 
 ## 175 px
 ![Redbooth](redbooth-175.png)
+![Toggl](toggl-175.png)
 
 ## 141 px
 ![Filethis](filethis-141.png)
