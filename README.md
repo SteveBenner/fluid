@@ -28,7 +28,8 @@ I've started a micro library to act as an object-oriented interface for editing 
 - CoffeeScript
 
 ---
-
+# TODO:
+- link to relevant gists
 
 [official site developer page]:http://fluidapp.com/developer/
 [my collection]:app-icons/README.md
