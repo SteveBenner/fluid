@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
-
+#
 # This script generates a markdown README containing previews of all the icons
-# in this folder, sorted by dimension, as well as a legal notice.
-
-# NOTE: all image file names must end with a hyphen, followed by a size in pixels
+# in this folder (sorted by dimension) as well as a legal notice regarding use of images.
+#
+# NOTE: In order for this to work, image file names must be suffixed with: '-<size-in-pixels>'
 
 images = Dir.glob("*.{png,jpg}").reduce({}) do |list, img|
 	# divide files into arrays - one for each unique img size
@@ -17,7 +17,7 @@ images = Dir.glob("*.{png,jpg}").reduce({}) do |list, img|
 	list
 end
 
-# create README file
+# update README file, or create one if nonexistent
 File.open 'README.md', 'w' do |f|
 	f.puts '# App Icons'
   f.puts ''
@@ -33,3 +33,6 @@ File.open 'README.md', 'w' do |f|
 		f.puts ''
 	end
 end
+
+puts "Links were successfully generated for #{images.count} files:"
+images.each { |filename| puts filename }
