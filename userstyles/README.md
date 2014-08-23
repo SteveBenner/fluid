@@ -1,4 +1,4 @@
-#### This file describes how my userstyles modify the original website for each Fluid app
+#### This file describes how my userstyles modify the original website of each Fluid app
 
 ## Gmail
 

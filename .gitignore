@@ -25,3 +25,7 @@ Thumbs.db
 # Bower
 bower_components/
 components/
+
+# Ignore CSS/JS files because SASS/CoffeeScript makes them obsolete
+*.css
+userscripts/js/
