@@ -1,4 +1,4 @@
-# Apple seriously, comon
+## Apple seriously, comon
 ._*
 .DS_Store
 .DS_Store?
@@ -8,24 +8,27 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
-# Vim, you are no longer cool
+## Vim, you are no longer cool
 *~
 
-# JetBrains IDE configuration files
+## JetBrains IDE configuration files
 .idea/
 
-# SASS/SCSS
+## SASS/SCSS
 .sass-cache/
 
-# Bundler
+## Bundler
 .gems/
 .vendor/
 .bundle/
 
-# Bower
+## Bower
 bower_components/
+bower-components/
 components/
+.bowerrc.json
+bower.json
 
-# Ignore CSS/JS files because SASS/CoffeeScript makes them obsolete
-*.css
+## Ignore CSS/JS files because SASS/CoffeeScript makes them obsolete
+userstyles/*.css
 userscripts/js/

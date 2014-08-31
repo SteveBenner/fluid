@@ -1,0 +1,9 @@
+# Bower components
+#
+#version: # project version
+#license: # name of license, e.g. MIT
+authors:  [Stephen Benner <sbenner9@gmail.com>]
+#homepage: stevebenner.github.io
+private:  true # this keeps my precious safe!
+devDependencies:
+#  jquery: # todo: put version 1.8.3 or some older one here...

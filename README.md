@@ -44,7 +44,7 @@ For now, I make do with small amenities like this: take a half-dozen or so of yo
 ---
 
 ### COMING SOMEDAY: Fluidly, a tool suite for working with Fluid apps!
-I've started a micro library to act as an object-oriented interface for working with userstyles and userscripts, and I have plans to grow it into a fully fledged tool suite for enhancing Fluid app development.
+I've started [a micro library](https://github.com/SteveBenner/fluidly) to act as an object-oriented interface for working with userstyles and userscripts, and I have plans to grow it into a fully fledged tool suite for enhancing Fluid app development.
 
 [official Fluid developer page]:http://fluidapp.com/developer/
 [my collection]:app-icons/README.md
