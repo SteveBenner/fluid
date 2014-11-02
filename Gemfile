@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 
 group :hydrodynamic do
 	gem 'plist'
+	# todo: it may be preferable to use another gem if the files are in binary format
 end
 
 group :development do
