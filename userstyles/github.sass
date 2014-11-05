@@ -1,0 +1,14 @@
+@import 'all'
+
+// todo: extract code to `better-github` repo
+
+// Original colors from the website
+$ui-sidebar-header-color: #f4f3f4
+
+// Darken certain UI elements on click events to produce a 'depressed' look
+.boxed-group.flush[role="navigation"]:active > h3
+  background-color: darken(#dfdee0, 20%) !important
+
+// Hide GitHub Jobs logo
+a.jobs-logo
+  @extend %remove
