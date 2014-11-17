@@ -20,3 +20,4 @@ contribRepos.children('h3').on 'click', ->
     list.animate {height: 0}, UI_COLLAPSE_ANIMATION_DURATION, UI_COLLAPSE_ANIMATION_EASING, ->
       $(this).children().css 'display', 'none'
   list.toggleClass 'collapsed'
+
