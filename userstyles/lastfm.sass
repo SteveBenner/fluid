@@ -1,6 +1,18 @@
-// Clean up everything
+@import all
+
+// De-bloat the site by removing a ton of shit
 
 // ads
-.LastAd, #ads_skinStyles
-  display: none !important
+// main footer
+// comments/social area
+.LastAd, #ads_skinStyles,
+.page-wrapper > footer,
+.content > .catalogue-social
+  @extend %remove
 
+// flatten out content to fill the window
+body
+  padding: 0
+
+  > article.content, > .masthead-wrapper
+    margin: 0
