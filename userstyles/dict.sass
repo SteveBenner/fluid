@@ -2,5 +2,12 @@
 @import common/all
 
 // kill ads
-#adxtop, #adrig, #shst
+div[id^="adxtop"], #adrig, #shst
   @extend %remove
+
+// hide right sidebar and center all the content
+#maincontent
+  margin: 0 auto !important
+
+  > .noli666
+    @extend %remove
