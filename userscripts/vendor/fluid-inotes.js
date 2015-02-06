@@ -19,24 +19,24 @@ function fluidNewMail() {
   if ($mailContainer.length === 0)
     return doLogin();
   var $unreadRows = 
-	  $mailContainer.find(".s-lv-row-x-unread-red, .s-lv-row-x-unread-red-selected");
-	console.log("unread badge " + $unreadRows.length);
-	  
-	// update the badge if the unread count changed
-	if (FL_ML_CNT !== $unreadRows.length) {
-  	FL_ML_CNT = $unreadRows.length;
-	  if (FL_ML_CNT === 0) {
-		  window.fluid.dockBadge = '';
-	  } else {
-		  window.fluid.dockBadge = ''+FL_ML_CNT;
-	  }
-	}
-	
+      $mailContainer.find(".s-lv-row-x-unread-red, .s-lv-row-x-unread-red-selected");
+    console.log("unread badge " + $unreadRows.length);
+      
+    // update the badge if the unread count changed
+    if (FL_ML_CNT !== $unreadRows.length) {
+      FL_ML_CNT = $unreadRows.length;
+      if (FL_ML_CNT === 0) {
+          window.fluid.dockBadge = '';
+      } else {
+          window.fluid.dockBadge = ''+FL_ML_CNT;
+      }
+    }
+    
   // find id of each unread message and check to see if we have alerted it
   // before. if not then growl alert it. if so then skip it.
   // sound if have at least one new message alerted
-	var bell = false;
-	var now = new Date();
+    var bell = false;
+    var now = new Date();
   $unreadRows.each(function (i) {
     var $unreadRow = $(this);
     var unid = $unreadRow.attr("unid");
@@ -44,27 +44,27 @@ function fluidNewMail() {
     if (noted !== null && noted.length > 3)
       return;
     if (!bell) {
-		  window.fluid.playSound('Hero');
+          window.fluid.playSound('Hero');
       bell = true;
     }
     var $unreadCols = $unreadRow.find("td");
-		var from = $unreadCols.eq(3).text();
-		var subject = cleanSubject($unreadCols.eq(4).text());
-		console.log("New msg " + from + " " + unid);
-		window.fluid.showGrowlNotification({
-				title: from, 
-				description: subject, 
-				priority: 1, 
-				sticky: false,
-				identifier: unid
-		});
+        var from = $unreadCols.eq(3).text();
+        var subject = cleanSubject($unreadCols.eq(4).text());
+        console.log("New msg " + from + " " + unid);
+        window.fluid.showGrowlNotification({
+                title: from, 
+                description: subject, 
+                priority: 1, 
+                sticky: false,
+                identifier: unid
+        });
     localStorage.setItem("N_"+unid, ""+now.getTime());
-  });	
-	
-	// finally on Monday prior to 10am do housekeeping and remove old noted items
-	if (now.getDay() === 1 && now.getHours() < 10) {
-	  console.log("Housekeeping");
-	  var oneWeek = "" + (now.getTime() - (7*24*60*60*1000));
+  });    
+    
+    // finally on Monday prior to 10am do housekeeping and remove old noted items
+    if (now.getDay() === 1 && now.getHours() < 10) {
+      console.log("Housekeeping");
+      var oneWeek = "" + (now.getTime() - (7*24*60*60*1000));
     for (var i=0;i<localStorage.length;i++) {
       var key = localStorage.key(i);
       if (key.substring(0,2) !== "N_")
@@ -75,8 +75,8 @@ function fluidNewMail() {
         localStorage.removeItem(key);
       }
     }
-	}
-	return FL_ML_CNT;
+    }
+    return FL_ML_CNT;
 }
 
 function cleanSubject(subj) {
@@ -104,13 +104,13 @@ function doLogin() {
   if ($user.length === 1) {
     var $pass = $("input[name='password']", main);
     if ($pass.length === 1) {
-			console.log("login form found, autofill, autosubmit");
-			$user.val('xxx');
-			$pass.val('xxx');
-			var $form = $pass.parents("form");
-			$form.after("<div class='loading'></div>");
-			$form.submit();
-			return true;
+            console.log("login form found, autofill, autosubmit");
+            $user.val('xxx');
+            $pass.val('xxx');
+            var $form = $pass.parents("form");
+            $form.after("<div class='loading'></div>");
+            $form.submit();
+            return true;
     }
   }
   return false;
@@ -118,7 +118,7 @@ function doLogin() {
 
 jQuery(function($) {
   // when page first displays always clear the badge
-	window.fluid.dockBadge = '';
+    window.fluid.dockBadge = '';
 
   if (doLogin())
     return;
