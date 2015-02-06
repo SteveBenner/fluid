@@ -29,6 +29,6 @@ components/
 .bowerrc.json
 bower.json
 
-## Ignore CSS/JS files because SASS/CoffeeScript makes them obsolete
+## Ignore CSS/JS files because SASS/CoffeeScript
 userstyles/*.css
 userscripts/js/

@@ -2,5 +2,4 @@
 # Official docs at: http://bower.io/docs/config/
 #
 analytics: false
-#cwd: .
 directory: assets/bower-components # [String] Location where packages are installed

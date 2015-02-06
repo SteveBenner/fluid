@@ -1,7 +1,4 @@
-#### This file describes the modifications and capabilities provided by my userscripts.
+# Website scripts
 
-## Mind Meiser
-
-**TODO**:
-
-- implement markdown support for notes
+### GitHub
+- **Feature:** Made 'Repositories you contribute to' list collapsible, triggered by clicking on header

@@ -1,4 +1,4 @@
-# attempt to highlight code
+# really pathetic attempt to highlight code
 curr = $('.content[contenteditable]:focus');
 curr.keypress (e) ->
   console.log 'fired'
