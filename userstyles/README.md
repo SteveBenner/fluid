@@ -1,4 +1,8 @@
-# Website style notes
+# Wat It Do
+
+### Facebook
+- Most if not all ads are POOF gone, and so is the right content bar
+- Feed posts are widened substantially and 'sponsored' ones are hidden
 
 ### Gmail
 
@@ -8,7 +12,10 @@
 
 - The left sidebar is now wider, so a larger portion of the names of contact groups can be seen
 
-### Mind Meiser
+### LastFM
+- Cut out extraneous content such as the footer and sidebar
+
+### Mind Meister
 **TODO:**
 
 - toolbar enhancements
