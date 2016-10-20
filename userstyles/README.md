@@ -7,7 +7,7 @@
 ### Gmail
 
 - Email drafts have larger text and a nicer font
-- 
+- Removed the glaring, obnoxious 'browser not supported' banner at the top of the window
 
 ### Google Contacts
 
