@@ -1,4 +1,9 @@
-## Improvements/modifications/fixes/enhancements
+# TODO
 
-### Workflowy
-- develop some way to create aliased hyperlinks dynamically, from user input (Workflowy converts recognizable URL's to hyperlinks so this should be feasible)
+- re-organize repo and clean
+- update for v2
+
+## App customizations (see individual files for detail)
+- Easings-Mini
+- Toggl-Mini
+- Soundcloud
