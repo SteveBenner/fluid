@@ -1,6 +1,8 @@
 # Fluid
 The Mac app [Fluid](http://fluidapp.com/) represents a revolutionary approach to Software, and it offers particularly exciting opportunities for web developers like myself. It's a new way of experiencing the internet, one in which the possibilities for customization are endless, and the sky is the limit. This repo represents my library of custom styles, scripts, and resources for Fluid apps.
 
+#### *DISCLAIMER*: I am not the creator of Fluid. That would be [Todd Ditchendorf](https://fluidapp.com/about/) of [Celestial Teapot Software](https://celestialteapot.com).
+
 ## Resources
 
 ### [Icons](app-icons/)
@@ -44,5 +46,5 @@ Sometimes it only takes a little CSS to change your web experience. My favorite 
 ### COMING SOMEDAY: Fluidly, a tool suite for managing Fluid apps
 I've started [a micro library](https://github.com/SteveBenner/fluidly) to act as an object-oriented interface for working with userstyles and userscripts, and I have plans to grow it into a fully fledged tool suite someday...
 
-[official Fluid developer page]:http://fluidapp.com/developer/
+[official Fluid developer page]: http://fluidapp.com/developer/
 [my collection]:app-icons/README.md
